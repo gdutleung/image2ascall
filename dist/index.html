@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>image2ascall</title>
+    <script src="./bundle.js"></script>
+</head>
+<body>
+    <div class="section-select">
+        <input id="ascall-image" type="file" value="选择图片">
+        <button id="btn-convert">转换</button>
+    </div>
+    <div id="section-show-image"></div>
+    <script>
+        var oBtnConvert = document.getElementById('btn-convert')
+        oBtnConvert.addEventListener('click', getImage)
+        function getImage() {
+            var oImage = document.getElementById('ascall-image')
+            // 获取文件
+            var oImageFile = oImage.files[0]
+
+            var aImage = new AscallImage(oImageFile)
+
+            // aImage.printData()
+            // console.log(aImage)
+            aImage.drawPicture()
+
+            // // 读取之后的文件对象
+            // var imgFile;
+
+            // if (!oImageFile) {
+            //     // 没有选择文件
+            //     alert('please select an image.')
+            //     return
+            // }
+            // var reader = new FileReader()
+            // reader.onload = function(e) {
+            //     console.log(e)
+            //     imgFile = e.target.result
+            // }
+            // // 开始读取文件
+            // reader.readAsDataURL(oImageFile)
+        }
+    </script>
+</body>
+</html>

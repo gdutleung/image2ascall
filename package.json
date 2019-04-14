@@ -1,0 +1,36 @@
+{
+  "name": "image2ascall",
+  "version": "1.0.0",
+  "description": "Convert the image to ascall code with Javascript.",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdutleung/image2ascall.git"
+  },
+  "keywords": [
+    "image",
+    "ascall"
+  ],
+  "author": "gdutleung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdutleung/image2ascall/issues"
+  },
+  "homepage": "https://github.com/gdutleung/image2ascall#readme",
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
