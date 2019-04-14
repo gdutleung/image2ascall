@@ -1,0 +1,13 @@
+.ascall-wrapper {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.ascall-wrapper .ascall-row {
+    white-space: nowrap;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1;
+}
